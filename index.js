@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+
 function displayPosts() {
   fetch("http://localhost:3000/posts")
     .then(res => res.json())
@@ -59,4 +62,6 @@ function main() {
   addNewPostListener();
 }
 
-document.addEventListener("DOMContentLoaded", main);
+main();
+
+});
